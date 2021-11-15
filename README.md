@@ -1,4 +1,4 @@
-# Rockets demonstrates a genetic algorithm. 
+# Rockets: A Demonstration of a Genetic Algorithm
 
 Installation:
 pip install pygame

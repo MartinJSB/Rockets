@@ -1,4 +1,4 @@
-# Rockets demonstrates a genetic algorithm. 
+# Rockets: A Demonstration of a Genetic Algorithm
 
 Installation:
 pip install pygame
@@ -11,3 +11,5 @@ Each rocket is born with a random set of actions (two sequences of how to steer 
 The largest ship shows the last generations most fit ship. 
 
 There's four colors, which is inherited by the mother. The proportion of each generations colored ships are showed in the left upper corner. In a sense this is a very slow 4-sided dice as one color, given enough time, will be the only surviving one. 
+
+![alt text](https://github.com/MartinJSB/Rockets/blob/master/Capture.PNG)

@@ -81,7 +81,7 @@ class Ship():
         self.vx = 0
         self.vy = 0
         self.ax = 0
-        self.ay = -0.01
+        self.ay = 0
         self.angle = 0
         self.fitness = 0
         self.color = color
@@ -155,8 +155,6 @@ class Ship():
     
     def drawSelf(self, fitest):
         old_center = (self.x, self.y)
-        #py.draw.circle(self.image_orig, BLACK, center=(3,3), radius = 2)
-        #TODO Fix the CHAMPION
         new_image = None
         new_image = py.transform.rotate(self.image_orig , self.angle)
         if self == fitest:
@@ -232,7 +230,7 @@ class Generation():
             mother_steer_actions = egg.steer_actions
             baby_thrust_actions = []
             father_thrust_actions = sperm[1]
-            mother_thrust_actions = egg.steer_actions
+            mother_thrust_actions = egg.thrust_actions
             for i in range(len(DNA_cut_locations)-1):
                 start = DNA_cut_locations[i]
                 end = DNA_cut_locations[i+1]
